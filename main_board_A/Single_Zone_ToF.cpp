@@ -18,7 +18,7 @@ bool SingleZoneToF::init() {
 
   _sensor.setDistanceModeShort(); // Range up to ~1.3m with high ambient light rejection
   _sensor.setTimingBudgetInMs(33);
-  _sensor.setInterMeasurementInMs(33);
+  _sensor.setIntermeasurementPeriod(33);
   _sensor.startRanging();
   return true;
 }
